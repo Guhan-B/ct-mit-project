@@ -286,12 +286,12 @@ footer{
     opacity: 1;
 }
 
-.about .card,.campus .card{
+.card{
     transition: 0.1s ease-in-out all;
     box-shadow: none;
 }
 
-.about .card:hover,.campus .card:hover{
+.card:hover{
     box-shadow: rgba(0,0,0,0.1) 10px 10px 10px;
 }
 
@@ -338,7 +338,7 @@ footer{
     font-size: 1rem;
     border: none;
     outline: none;
-    background-image: linear-gradient(#242ebb,#011f4b);
+    background:#001f4d;
     color: white;
     cursor: pointer;
     padding: 10px;
