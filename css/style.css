@@ -186,6 +186,10 @@ footer{
     height: 35vw;
     background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('https://scontent.fmaa3-1.fna.fbcdn.net/v/t31.0-8/14939533_1059590127472163_3800358786675468763_o.jpg?_nc_cat=111&_nc_sid=6e5ad9&_nc_ohc=gr6drKjw6IIAX_5T9Dn&_nc_ht=scontent.fmaa3-1.fna&oh=77e7ef67a324fc9fc0ef67cf759a18a4&oe=5F964F71');
 }
+.bg-5{
+    height: 40vw;
+    background:linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.8)), url('../assets/img/bgp.jpg');
+}
 
 .showcase-image{
     background-position: center center;
@@ -418,6 +422,59 @@ footer{
     font-weight: 500;
     color: white;
 }
+
+.company-images{
+    display: grid;
+    /* grid-gap: 1rem; */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 3rem;
+    
+}
+.company-images div{
+    display: flex;
+    /* background-color: rebeccapurple; */
+    align-items: center;
+    justify-content: space-around;
+}
+.company-images div img{
+    width: 150px;
+    display: block;
+    opacity: 0.8;
+    transition: 0.2s all ease-in-out;
+}
+
+.company-images div img:hover{
+    opacity: 1;
+}
+
+.placement-showcase{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+summary{
+    padding: 1rem;
+    cursor: pointer;
+    color: black;
+    font-weight: 500;
+    border-radius: 3px;
+    background-color: #b9d6f4;
+    transition: 0.1s all ease-in-out;
+}
+
+details{
+    margin: 1rem 0;;
+}
+
+summary:hover{
+    background-color: #9fc0e4;
+}
+
+
 
 
 
