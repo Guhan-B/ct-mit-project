@@ -1,3 +1,4 @@
+// back to top button code
 let backToTop = document.getElementById("back-to-top")
 
 window.onscroll = () => {
@@ -14,6 +15,7 @@ backToTop.addEventListener("click", () => {
   document.documentElement.scrollTo(0, 0)
 })
 
+// homepage slide show code
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -28,22 +30,19 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
   if (n > slides.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = slides.length }
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
 }
-
-var date = new Date();
-document.getElementById("year").innerHTML = "Copyright &copy; " + date.getFullYear() + " Computer Technology | Designed by MIT Web Team";
 
 setInterval(()=>{
   plusSlides(1);
 },3000)
+
+// footer dynamic year code
+var date = new Date();
+document.getElementById("year").innerHTML = "Copyright &copy; " + date.getFullYear() + " Computer Technology | Designed by MIT Web Team";
+
