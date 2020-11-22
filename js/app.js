@@ -46,3 +46,10 @@ setInterval(()=>{
 var date = new Date();
 document.getElementById("year").innerHTML = "Copyright &copy; " + date.getFullYear() + " Computer Technology | Designed by MIT Web Team";
 
+var flkty = new Flickity( '.main-gallery', {
+  cellAlign: 'left',
+  contain: true,
+  wrapAround: true,
+  prevNextButtons: false,
+  autoPlay: 5000
+});
